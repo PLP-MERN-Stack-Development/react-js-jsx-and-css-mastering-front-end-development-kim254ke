@@ -14,11 +14,13 @@ const ApiData = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+        // Use the environment variable here:
+        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/posts`);
+        
         if (!res.ok) throw new Error("Failed to fetch posts");
         const data = await res.json();
 
-        //  Introduce 2-second delay to show the spinner
+        // Introduce 2-second delay to show the spinner
         setTimeout(() => {
             setPosts(data);
             setLoading(false);
