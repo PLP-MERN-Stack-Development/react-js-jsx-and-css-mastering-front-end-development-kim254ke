@@ -52,4 +52,4 @@ A dedicated page for integrating with an external data source.
 
 ## 🔗 Deployment
 
-[Paste your deployed URL here]
+https://cool-rolypoly-867928.netlify.app/
