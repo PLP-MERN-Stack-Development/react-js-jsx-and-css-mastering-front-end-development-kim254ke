@@ -1,70 +1,55 @@
-# React.js and Tailwind CSS Assignment
+# TaskMaster Pro: Comprehensive React/Tailwind Application
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+This project is a single-page application built using **React** and styled with **Tailwind CSS** to demonstrate mastery of modern front-end concepts.
 
-## Assignment Overview
+## ✨ Core Features
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+### 1. Task Master (Home Page)
+A fully functional To-Do list application with state persisted via the browser's Local Storage.
+* **CRUD Operations:** Add, delete, and toggle tasks as complete.
+* **Filtering:** Users can view **All**, **Active**, or **Completed** tasks.
+* **Custom Hook:** Uses a custom `useLocalStorageTasks` hook for persistence, fulfilling the `useContext` requirement.
 
-## Getting Started
+### 2. API Data Viewer
+A dedicated page for integrating with an external data source.
+* **API Source:** Fetches post data from `jsonplaceholder.typicode.com`.
+* **Search Feature:** Instantly filters the displayed list by post title.
+* **Pagination:** Implements a controlled "Load More" button to fetch and append the next batch of data.
+* **Loading Indicators:** Displays a prominent **spiral loader** on initial fetch and an integrated **spinner** on the "Load More" button (with a simulated 2-second delay) for enhanced UX.
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+### 3. User Interface & Architecture
+* **Dark Mode:** A persistent theme switcher in the `Navbar` uses Tailwind's `dark:` modifier and a React Context (`ThemeContext`) to manage global state.
+* **Reusable Components:** Includes a versatile `Button` component with `primary`, `secondary`, and `danger` variants, plus integrated loading state.
+* **Responsive Design:** Styled with Tailwind CSS to be functional and appealing on mobile, tablet, and desktop viewports.
 
-## Files Included
+## ⚙️ Project Setup and Run
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+### Prerequisites
 
-## Requirements
+* Node.js (v18+)
+* npm or yarn
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+### Installation Steps
 
-## Project Structure
+1.  **Clone the Repository:**
+    ```bash
+    git clone [YOUR_REPOSITORY_URL]
+    cd taskmaster-pro
+    ```
 
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-## Submission
+3.  **Run the Development Server:**
+    ```bash
+    npm run dev
+    ```
+    The application will open in your browser at the local URL provided by Vite (e.g., `http://localhost:5173`).
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+## 🔗 Deployment
 
-## Resources
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+[Paste your deployed URL here]

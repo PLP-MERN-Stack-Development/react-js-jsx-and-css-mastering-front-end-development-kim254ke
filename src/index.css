@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* 🚀 This line links the 'dark:' prefix to the '.dark' class on the HTML tag */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
