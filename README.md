@@ -52,4 +52,4 @@ A dedicated page for integrating with an external data source.
 
 ## 🔗 Deployment
 
-https://cool-rolypoly-867928.netlify.app/
+[ ![Task Manager View](Screenshot 2025-10-22 at 14.31.24.png)/(Screenshot 2025-10-22 at 14.31.40)(Screenshot 2025-10-22 at 14.31.51)(Screenshot 2025-10-22 at 16.49.39)](https://cool-rolypoly-867928.netlify.app/)
